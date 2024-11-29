@@ -47,7 +47,7 @@ export default function ProductListScreen({ navigation }) {
         <Text style={styles.productName}>{item.name}</Text>
         <Text style={styles.productDescription}>{item.description}</Text>
         <Text style={styles.productPrice}>
-          ZAR{item.price.toLocaleString()}
+          R{item.price.toLocaleString()}
         </Text>
         <TouchableOpacity
           style={styles.payButton}

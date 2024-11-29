@@ -12,7 +12,7 @@ export default function PaymentScreen({ route, navigation }) {
     ]);
   };
 
-  // popup for success payments 
+  // popup for success payments
   const handlePaymentSuccess = (response) => {
     Alert.alert(
       "Payment Successful",
@@ -33,7 +33,7 @@ export default function PaymentScreen({ route, navigation }) {
       <View style={styles.productInfo}>
         <Text style={styles.productTitle}>{product.name}</Text>
         <Text style={styles.productPrice}>
-          ZAR{product.price.toLocaleString()}
+          R{product.price.toLocaleString()}
         </Text>
       </View>
 
@@ -42,6 +42,7 @@ export default function PaymentScreen({ route, navigation }) {
         paystackKey="pk_test_a4c59c870f0e611d085140ac2fce8afd1e97acaf"
         amount={product.price.toString() + ".00"}
         billingEmail="paystackwebview@something.com"
+        currency="ZAR"
         billingName={product.name}
         activityIndicatorColor="#007bff"
         onCancel={handlePaymentCancel}
