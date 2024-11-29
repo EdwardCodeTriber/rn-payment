@@ -35,7 +35,5 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
-/screens/PaymentScreen.jsx
 ProductList.jsx
 
-App.jsx
