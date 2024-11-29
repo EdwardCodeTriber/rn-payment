@@ -33,7 +33,7 @@ export default function PaymentScreen({ route, navigation }) {
       <View style={styles.productInfo}>
         <Text style={styles.productTitle}>{product.name}</Text>
         <Text style={styles.productPrice}>
-          R{product.price.toLocaleString()}
+          R {product.price.toLocaleString()}
         </Text>
       </View>
 

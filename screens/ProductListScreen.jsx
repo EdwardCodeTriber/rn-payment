@@ -46,9 +46,7 @@ export default function ProductListScreen({ navigation }) {
       <View style={styles.productDetails}>
         <Text style={styles.productName}>{item.name}</Text>
         <Text style={styles.productDescription}>{item.description}</Text>
-        <Text style={styles.productPrice}>
-          R{item.price.toLocaleString()}
-        </Text>
+        <Text style={styles.productPrice}>R {item.price.toLocaleString()}</Text>
         <TouchableOpacity
           style={styles.payButton}
           onPress={() => handlePayment(item)}
